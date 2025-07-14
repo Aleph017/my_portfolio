@@ -17,6 +17,14 @@ h1, h2, h3 {
   text-align: center;
 }
 
+a{
+  color: #3da9db;
+}
+
+a:hover{
+  color: d1c002;
+}
+
 .lang{
   display: flex;
   justify-content: center;
