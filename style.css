@@ -17,10 +17,6 @@ h1, h2, h3 {
   text-align: center;
 }
 
-a{
-  transition: color 1s ease;
-}
-
 a:link{
   color: #3da9db;
 }
