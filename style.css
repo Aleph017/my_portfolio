@@ -17,12 +17,20 @@ h1, h2, h3 {
   text-align: center;
 }
 
-a{
+a:link{
   color: #3da9db;
 }
 
+a:visited{
+  color: #00ff9c;
+}
+
+a:hover{
+  color: #fffc58
+}
+
 a:active{
-  color: d1c002;
+  color: 00ffc8;
 }
 
 .lang{
