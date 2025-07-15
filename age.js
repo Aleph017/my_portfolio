@@ -6,5 +6,4 @@ setInterval(() => {
   const seconds = Math.floor((now - birth_date) / 1000);
   const years = Math.floor(seconds / (60*60*24*365.25));
   age_display.innerHTML = `I am ${seconds.toLocaleString()} seconds or ${years} years old`;
-  console.log(seconds, years)
-}, 1000)
+  }, 1000)

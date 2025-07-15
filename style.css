@@ -3,12 +3,17 @@
   src: url("fonts/static/FiraCode-Regular.ttf") format("truetype");
 }
 
+@font-face{
+  font-family: Hack-local;
+  src: url("fonts/Hack-Regular.ttf") format("truetype");
+}
+
 body{
   background-color: #0f0f0f;
 }
 
 * {
-  font-family: "Fira Code", monospace;
+  font-family: "Fira Code", monospace, Hack-local;
   font-size: 1.2rem;
   color: #dfdfdf;
 }
@@ -74,15 +79,28 @@ a:active{
   background-image: linear-gradient(#0f0f0f, #0f0f0f), linear-gradient(#dfdfdf 85%, #0f0f0f);
 }
 
-#apiframe{
-  font-family: monospace;
-  font-size: 1rem;
-}
-
 #noscript{
   border: 4px solid #d1c002;
   border-radius: 16px;
   padding: 8px;
+}
+
+#TEE{
+  padding: 16px;
+  height: 30vh;
+  width: auto;
+  overflow-y: scroll;
+  background-color: #000000;
+  font-family: Hack-local !important;
+  border: 2px solid #dfdfdf;
+  border-radius: 16px;
+}
+
+#cli *{
+  font-family: Hack-local !important;
+  background: none;
+  border: none;
+  outline: none;
 }
 
 img{
