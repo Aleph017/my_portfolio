@@ -22,7 +22,7 @@
 
       label.textContent = promptText;
       input.type = 'text';
-      input.autofocus = true;
+      input.autofocus = false;
 
       input.addEventListener('keydown', function (e) {
         if (e.key === 'Enter') {
@@ -47,7 +47,7 @@
       line.appendChild(label);
       line.appendChild(input);
       terminal.appendChild(line);
-      input.focus();
+      //input.focus();
     }
 
     // Start the terminal
