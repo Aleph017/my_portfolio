@@ -6,9 +6,11 @@
 
     // Available commands
     const commands = {
-      ls: () => './apiframe\n./shelf',
-      help: () => 'Available commands: ls, help, clear, exit',
+      ls: () => ' ',
+      help: () => 'Available commands: ls, help, clear, exit, reboot, fastfetch',
       exit: () => 'There\'s no escape.',
+      reboot: () => 'Permission denied.',
+      fastfetch: () => 'I use Arch btw <3',
       clear: () => {
         terminal.innerHTML = '';
         return '';
@@ -23,6 +25,7 @@
       label.textContent = promptText;
       input.type = 'text';
       input.autofocus = false;
+      input.style.width = "70vw";
 
       input.addEventListener('keydown', function (e) {
         if (e.key === 'Enter') {
@@ -36,6 +39,7 @@
           if (output) {
             const outputDiv = document.createElement('div');
             outputDiv.textContent = output;
+            outputDiv.style.fontSize = "0.8rem";
             terminal.appendChild(outputDiv);
           }
 
